@@ -31,6 +31,9 @@ namespace Console_GitTest
             Console.WriteLine();
             //дані про версію ОС
             Console.WriteLine("Your os: {0}", Environment.OSVersion);
+            Console.WriteLine();
+            //дані про версію .Net
+            Console.WriteLine(".Net version: {0}", Environment.Version);
         }
         
     }
