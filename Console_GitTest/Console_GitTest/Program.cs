@@ -23,6 +23,7 @@ namespace Console_GitTest
             //День місяця
             DateTime dtime = new DateTime(2015, 07, 07);
             Console.WriteLine("The day of {0} is {1}", dtime.Date, dtime.DayOfWeek);
+            Console.WriteLine("Today is {0} ", DateTime.Today.DayOfWeek);
             Console.WriteLine();
         }
         static void SystemEnvironment()
