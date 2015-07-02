@@ -11,6 +11,7 @@ namespace Console_GitTest
         static void Main(string[] args)
         {
             DateAndTimes();
+            SystemEnvironment();
             Console.ReadLine();
         }
         static void DateAndTimes()
@@ -20,7 +21,12 @@ namespace Console_GitTest
             //День місяця
             DateTime dtime = new DateTime(2015, 07, 07);
             Console.WriteLine("The day of {0} is {1}", dtime.Date, dtime.DayOfWeek);
-
+        }
+        static void SystemEnvironment()
+        { 
+            //дані про дискові пристрої ПК
+            foreach (string drive in Environment.GetLogicalDrives())
+                Console.WriteLine("Drive: {0}", drive);
         }
         
     }
