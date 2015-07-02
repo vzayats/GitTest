@@ -26,7 +26,7 @@ namespace Console_GitTest
             Console.WriteLine();
         }
         static void SystemEnvironment()
-        {
+        { 
             //дані про дискові пристрої ПК
             foreach (string drive in Environment.GetLogicalDrives())
                 Console.WriteLine("Drive: {0}", drive);
@@ -37,14 +37,21 @@ namespace Console_GitTest
             //дані про версію .Net
             Console.WriteLine(".Net version: {0}", Environment.Version);
         }
-        static void Dialog()
-        {
-            DialogResult msgboxyesorno;
-            msgboxyesorno = MessageBox.Show("Ви дійсно бажаєте вийти?");
-
-
+            static void Dialog()
+            {
+                DialogResult msgboxyesorno;
+            msgboxyesorno = MessageBox.Show("Ви дійсно бажаєте вийти?", "", MessageBoxButtons.YesNo);
+            if (msgboxyesorno == DialogResult.Yes)
+            {
+                Console.WriteLine("Ви нажали так!");
+            }
+            else
+            {
+                Console.WriteLine("Ви нажали ні!");
+            }
+            }
+            
         }
-
+        
     }
-}
 
