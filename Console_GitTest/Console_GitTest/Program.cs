@@ -10,6 +10,13 @@ namespace Console_GitTest
     {
         static void Main(string[] args)
         {
+            DateAndTimes();
+            Console.ReadLine();
+        }
+        static void DateAndTimes()
+        {
+            Console.WriteLine("Current date and time: {0}", DateTime.Now);
+
         }
     }
 }
