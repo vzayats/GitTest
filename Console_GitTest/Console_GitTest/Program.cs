@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Console_GitTest
 {
@@ -13,6 +14,7 @@ namespace Console_GitTest
             DateAndTimes();
             SystemEnvironment();
             Console.ReadLine();
+            Dialog();
         }
         static void DateAndTimes()
         {
@@ -24,7 +26,7 @@ namespace Console_GitTest
             Console.WriteLine();
         }
         static void SystemEnvironment()
-        { 
+        {
             //дані про дискові пристрої ПК
             foreach (string drive in Environment.GetLogicalDrives())
                 Console.WriteLine("Drive: {0}", drive);
@@ -35,6 +37,14 @@ namespace Console_GitTest
             //дані про версію .Net
             Console.WriteLine(".Net version: {0}", Environment.Version);
         }
-        
+        static void Dialog()
+        {
+            DialogResult msgboxyesorno;
+            msgboxyesorno = MessageBox.Show("Ви дійсно бажаєте вийти?");
+
+
+        }
+
     }
 }
+
