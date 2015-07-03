@@ -40,6 +40,8 @@ namespace Console_GitTest
             Console.WriteLine(".Net version: {0}", Environment.Version);
             //назва ПК
             Console.WriteLine("Your machine name is: {0}", Environment.MachineName);
+            //кількість процесорів в ПК
+            Console.WriteLine("Number of processors in your PC: {0}", Environment.ProcessorCount);
         }
             static void Dialog()
             {
