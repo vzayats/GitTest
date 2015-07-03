@@ -36,6 +36,8 @@ namespace Console_GitTest
             Console.WriteLine();
             //дані про версію .Net
             Console.WriteLine(".Net version: {0}", Environment.Version);
+            //назва ПК
+            Console.WriteLine("Your machine name is: {0}", Environment.MachineName);
         }
             static void Dialog()
             {
