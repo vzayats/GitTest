@@ -42,8 +42,6 @@ namespace Console_GitTest
             Console.WriteLine("Your machine name is: {0}", Environment.MachineName);
             //кількість процесорів в ПК
             Console.WriteLine("Number of processors in your PC: {0}", Environment.ProcessorCount);
-            //чи ОС 64-бітна
-            Console.WriteLine("Your OS is 64-bit: {0}", Environment.Is64BitOperatingSystem);
         }
             static void Dialog()
             {
