@@ -40,7 +40,7 @@ namespace Console_GitTest
             static void Dialog()
             {
                 DialogResult msgboxyesorno;
-            msgboxyesorno = MessageBox.Show("Ви дійсно бажаєте вийти?", "", MessageBoxButtons.YesNo);
+                msgboxyesorno = MessageBox.Show("Ви дійсно бажаєте вийти?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (msgboxyesorno == DialogResult.Yes)
             {
                 Console.WriteLine("Ви нажали так!");
